@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header id="nav-bar">
+    <picture id=nav-logo>
+      <img src="./images/logo.svg" alt="Huddle Logo">
+    </picture>
+    <button class="btn try-btn">Try it free</button>
+  </header>
+  <main class="wrapper">
+    <section class="top">
+      <div class="about">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+        </p>
+        <button class="btn start-btn">Get Started For Free</button>
+      </div>
+      <div class="illustration">
+        <img src="./images/screen-mockups.svg" alt="screen-mockup">
+      </div>
+      <div class="stats">
+        <div class="communities">
+          <img src="./images/icon-communities.svg" alt="communities formed">
+          <h2 class="stat-figure">1.4k+</h2>
+          <p class="stat-name">Communities Formed</p>
+        </div>
+        <div class="message">
+          <img src="./images/icon-messages.svg" alt="message sent">
+          <h2 class="stat-figure">2.7m+</h2>
+          <p class="stat-name">Messages Sent</p>
+        </div>
+      </div>
+    </section>
+    <section class="bottom">
+      <div class="sub-container grow-container">
+        <div class="sub-wrapper">
+          <img src="./images/illustration-grow-together.svg" alt="Grow together">
+          <div>
+            <h1>Grow Together</h1>
+            <p>
+              Generate meaningful discussions with your audience and build a strong, loyal community.Think of the insightful conversations you miss out on with a feedback form. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sub-container Flowing-container">
+        <div class="sub-wrapper">
+          <img src="./images/illustration-flowing-conversation.svg" alt="Flowing Conversations">
+          <div>
+            <h1>Flowing Conversations</h1>
+            <p>
+              You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sub-container user-container">
+        <div class="sub-wrapper">
+          <img src="./images/illustration-your-users.svg" alt="Your Users">
+          <div>
+            <h1>Your Users</h1>
+            <p>
+              It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="get-started">
+        <h1>Ready To Build Your Community?</h1>
+        <button class="btn start-btn">Get Started For Free</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-wrapper">
+      <div class="col col-one">
+        <h1>Newsletter</h1>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+        <div>
+          <div class="input-group">
+            <input type="email" name="newsletter" id="newsletter" placeholder="john@mail.com">
+          </div>
+          
+          <input type="submit"  value="Subscribe" class="btn subscribe">
+        </div>
+      </div>
+      <div class="col col-two">
+        <div class="bottom-logo">
+          <img src="./images/logo copy.svg" alt="huddle logo">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+        <ul class="contact-items">
+          <li>
+            <img src="./images/icon-phone.svg" alt="phone">
+            <a href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
+          </li>
+          <li>
+            <img src="./images/icon-email.svg" alt="email">
+            <a href="mailto:example@huddle.com">example@huddle.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>   
+    <section class="social_media">
+      <a href="#" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512" class="icon"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+      </a>
+      <a href="#" class="social-btn">
+        <ion-icon name="logo-instagram" class="icon icon-ig"></ion-icon>
+      </a>
+      <a href="#" class="social-btn">
+        <ion-icon name="logo-twitter" class="icon"></ion-icon>
+      </a>
+    </section>
+    <section class="attribution-container">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="olokodanaabdulkabir@gmaail.com">Olokodana Abdulkabir</a>.
+      </p>
+    </section>
+  </footer>
+ 
+  <script>
+    const input_container = document.querySelector(".input-group")
+    const input = document.querySelector("#newsletter")
+    const div = document.createElement('div')
+    const content = document.createTextNode('Check your Email please')
+
+    input.addEventListener("focus", ()=>{
+      div.appendChild(content)
+      div.classList.add("error")
+      input_container.appendChild(div)
+    })
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
